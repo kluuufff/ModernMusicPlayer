@@ -11,6 +11,10 @@
 		B93BFA252B84D9E9008B23B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93BFA242B84D9E9008B23B0 /* ContentView.swift */; };
 		B93BFA272B84D9EB008B23B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93BFA262B84D9EB008B23B0 /* Assets.xcassets */; };
 		B93BFA2A2B84D9EB008B23B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93BFA292B84D9EB008B23B0 /* Preview Assets.xcassets */; };
+		B93BFA492B8500F4008B23B0 /* SFProDisplay-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = B93BFA452B8500E4008B23B0 /* SFProDisplay-Ultralight.otf */; };
+		B93BFA4A2B8500F4008B23B0 /* SFProDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B93BFA472B8500E4008B23B0 /* SFProDisplay-Bold.otf */; };
+		B93BFA4B2B8500F4008B23B0 /* SFProDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B93BFA462B8500E4008B23B0 /* SFProDisplay-Regular.otf */; };
+		B93BFA4C2B8500F4008B23B0 /* SFProDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B93BFA482B8500F0008B23B0 /* SFProDisplay-Black.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		B93BFA242B84D9E9008B23B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B93BFA262B84D9EB008B23B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B93BFA292B84D9EB008B23B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B93BFA432B85007D008B23B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B93BFA452B8500E4008B23B0 /* SFProDisplay-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Ultralight.otf"; sourceTree = "<group>"; };
+		B93BFA462B8500E4008B23B0 /* SFProDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Regular.otf"; sourceTree = "<group>"; };
+		B93BFA472B8500E4008B23B0 /* SFProDisplay-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Bold.otf"; sourceTree = "<group>"; };
+		B93BFA482B8500F0008B23B0 /* SFProDisplay-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Black.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +62,11 @@
 			children = (
 				B93BFA222B84D9E9008B23B0 /* ModernMusicPlayerApp.swift */,
 				B93BFA242B84D9E9008B23B0 /* ContentView.swift */,
+				B93BFA432B85007D008B23B0 /* Info.plist */,
+				B93BFA472B8500E4008B23B0 /* SFProDisplay-Bold.otf */,
+				B93BFA462B8500E4008B23B0 /* SFProDisplay-Regular.otf */,
+				B93BFA452B8500E4008B23B0 /* SFProDisplay-Ultralight.otf */,
+				B93BFA482B8500F0008B23B0 /* SFProDisplay-Black.otf */,
 				B93BFA262B84D9EB008B23B0 /* Assets.xcassets */,
 				B93BFA282B84D9EB008B23B0 /* Preview Content */,
 			);
@@ -126,8 +140,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B93BFA4C2B8500F4008B23B0 /* SFProDisplay-Black.otf in Resources */,
 				B93BFA2A2B84D9EB008B23B0 /* Preview Assets.xcassets in Resources */,
+				B93BFA4A2B8500F4008B23B0 /* SFProDisplay-Bold.otf in Resources */,
 				B93BFA272B84D9EB008B23B0 /* Assets.xcassets in Resources */,
+				B93BFA4B2B8500F4008B23B0 /* SFProDisplay-Regular.otf in Resources */,
+				B93BFA492B8500F4008B23B0 /* SFProDisplay-Ultralight.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +154,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		B93BFA302B84DC3D008B23B0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -147,7 +165,7 @@
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/bash;
 			shellScript = "#!/bin/bash\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n";
 		};
@@ -296,6 +314,7 @@
 				DEVELOPMENT_TEAM = 9SR6C9RNX9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ModernMusicPlayer/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -330,6 +349,7 @@
 				DEVELOPMENT_TEAM = 9SR6C9RNX9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ModernMusicPlayer/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
