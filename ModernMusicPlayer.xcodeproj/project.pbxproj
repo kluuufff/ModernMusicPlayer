@@ -15,6 +15,7 @@
 		B93BFA4A2B8500F4008B23B0 /* SFProDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B93BFA472B8500E4008B23B0 /* SFProDisplay-Bold.otf */; };
 		B93BFA4B2B8500F4008B23B0 /* SFProDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B93BFA462B8500E4008B23B0 /* SFProDisplay-Regular.otf */; };
 		B93BFA4C2B8500F4008B23B0 /* SFProDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B93BFA482B8500F0008B23B0 /* SFProDisplay-Black.otf */; };
+		B9EC46BC2B86226400467F45 /* SFProDisplay-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = B9EC46BB2B86225B00467F45 /* SFProDisplay-Thin.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B93BFA462B8500E4008B23B0 /* SFProDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Regular.otf"; sourceTree = "<group>"; };
 		B93BFA472B8500E4008B23B0 /* SFProDisplay-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Bold.otf"; sourceTree = "<group>"; };
 		B93BFA482B8500F0008B23B0 /* SFProDisplay-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Black.otf"; sourceTree = "<group>"; };
+		B9EC46BB2B86225B00467F45 /* SFProDisplay-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Thin.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +62,10 @@
 		B93BFA212B84D9E9008B23B0 /* ModernMusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				B93BFA222B84D9E9008B23B0 /* ModernMusicPlayerApp.swift */,
 				B93BFA242B84D9E9008B23B0 /* ContentView.swift */,
+				B9EC46BA2B861D0700467F45 /* supported_files */,
+				B9EC46B92B861CED00467F45 /* project_fonts */,
 				B93BFA432B85007D008B23B0 /* Info.plist */,
-				B93BFA472B8500E4008B23B0 /* SFProDisplay-Bold.otf */,
-				B93BFA462B8500E4008B23B0 /* SFProDisplay-Regular.otf */,
-				B93BFA452B8500E4008B23B0 /* SFProDisplay-Ultralight.otf */,
-				B93BFA482B8500F0008B23B0 /* SFProDisplay-Black.otf */,
-				B93BFA262B84D9EB008B23B0 /* Assets.xcassets */,
 				B93BFA282B84D9EB008B23B0 /* Preview Content */,
 			);
 			path = ModernMusicPlayer;
@@ -79,6 +77,27 @@
 				B93BFA292B84D9EB008B23B0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B9EC46B92B861CED00467F45 /* project_fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B93BFA472B8500E4008B23B0 /* SFProDisplay-Bold.otf */,
+				B93BFA462B8500E4008B23B0 /* SFProDisplay-Regular.otf */,
+				B9EC46BB2B86225B00467F45 /* SFProDisplay-Thin.otf */,
+				B93BFA452B8500E4008B23B0 /* SFProDisplay-Ultralight.otf */,
+				B93BFA482B8500F0008B23B0 /* SFProDisplay-Black.otf */,
+			);
+			path = project_fonts;
+			sourceTree = "<group>";
+		};
+		B9EC46BA2B861D0700467F45 /* supported_files */ = {
+			isa = PBXGroup;
+			children = (
+				B93BFA222B84D9E9008B23B0 /* ModernMusicPlayerApp.swift */,
+				B93BFA262B84D9EB008B23B0 /* Assets.xcassets */,
+			);
+			path = supported_files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +163,7 @@
 				B93BFA2A2B84D9EB008B23B0 /* Preview Assets.xcassets in Resources */,
 				B93BFA4A2B8500F4008B23B0 /* SFProDisplay-Bold.otf in Resources */,
 				B93BFA272B84D9EB008B23B0 /* Assets.xcassets in Resources */,
+				B9EC46BC2B86226400467F45 /* SFProDisplay-Thin.otf in Resources */,
 				B93BFA4B2B8500F4008B23B0 /* SFProDisplay-Regular.otf in Resources */,
 				B93BFA492B8500F4008B23B0 /* SFProDisplay-Ultralight.otf in Resources */,
 			);
